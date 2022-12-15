@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontend.geschäftsführung.GeschaeftsfuehrungController">
+   <children>
+      <Label layoutX="43.0" layoutY="31.0" text="Bereich Geschäftsführung">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button fx:id="annehmengs" layoutX="43.0" layoutY="252.0" mnemonicParsing="false" onAction="#annehmengs" text="Annehmen" />
+      <Button fx:id="ablehnengs" layoutX="140.0" layoutY="252.0" mnemonicParsing="false" onAction="#ablehnengs" text="Ablehnen" />
+      <VBox fx:id="vBoxAgs" layoutX="41.0" layoutY="79.0" prefHeight="137.0" prefWidth="336.0" spacing="5.0">
+         <children>
+            <HBox prefHeight="19.0" prefWidth="230.0" spacing="6.0">
+               <children>
+                  <Label fx:id="cLabel" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
